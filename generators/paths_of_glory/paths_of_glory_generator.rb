@@ -17,9 +17,9 @@ Now, add 'include Achievements' to your User model:
       include Achievements
     end
     
-and add 'app/modeles/achievements' to your load paths:
+and add 'app/models/achievements' to your load paths:
 
-    config.load_paths += \%\W( \#\{Rails.root\}/app/models/achievements )
+    config.load_paths += \%\W( \#\{Rails.root\}/app/achievements )
 
 and run:
 

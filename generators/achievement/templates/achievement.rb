@@ -6,23 +6,23 @@ class <%= class_name %> < Achievement
   # level 4, :quota => 100
   # level 5, :quota => 500
   
-  # set_thing_to_check { |user| ... }
+  # set_thing_to_check { |achievable| ... }
 
   # Comment out below for multi-level achievements
-  # def self.award_achievements_for(user)
-  #   return unless user
+  # def self.award_achievements_for(achievable)
+  #   return unless achievable
   #   levels.each do |level|
-  #     if user.not.has_achievement?(self, level[:level]) and thing_to_check(user) >= level[:quota]
-  #       user.award_achievement(self, level[:level])
+  #     if achievable.not.has_achievement?(self, level[:level]) and thing_to_check(achievable) >= level[:quota]
+  #       achievable.award_achievement(self, level[:level])
   #     end
   #   end
   # end
 
   # Comment out below for once-off achievements
-  # def self.award_achievements_for(user)
-  #   return unless user
-  #   return if user.has_achievement?(self)
-  #   user.award_achievement(self)
+  # def self.award_achievements_for(achievable)
+  #   return unless achievable
+  #   return if achievable.has_achievement?(self)
+  #   achievable.award_achievement(self)
   # end
   
 end
